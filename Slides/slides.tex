@@ -304,9 +304,11 @@ $^{\S}$University of Tennessee, Knoxville}
 
 \begin{itemize}
 \myitem AIREBO Potential
+\begin{itemize} \item 24 Parameters \end{itemize}
 \vspace{2mm}
 
 \myitem Tersoff Potential
+\begin{itemize} \item 11 Parameters \end{itemize}
 \vspace{2mm}
 
 \myitem LCBOP Potential
@@ -373,12 +375,40 @@ $\rightarrow$ Calculation of $\kappa$~(500~ps)
 
 \begin{frame}{Comparison with Experiments}
 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{./Figures/comp_k}
+\end{center}
+\end{figure}
 
 \end{frame}
 
 %___________________________NEW SLIDE______________________________________
 
 \begin{frame}{Active Subspace Discovery: AIREBO}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{./Figures/eig_airebo_k200}
+\end{center}
+\end{figure}
+%
+\end{column}
+\hspace{-12mm}
+\begin{column}{0.5\textwidth}
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{./Figures/eig_airebo_k800}
+\end{center}
+\end{figure}
+%
+
+\end{column}
+\end{columns}
 
 
 \end{frame}
@@ -387,7 +417,46 @@ $\rightarrow$ Calculation of $\kappa$~(500~ps)
 
 \begin{frame}{Active Subspace Discovery: Tersoff}
 
+\begin{columns}
+\begin{column}{0.5\textwidth}
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{./Figures/eig_tersoff_k200}
+\\
+\includegraphics[width=0.8\textwidth]{./Figures/eig_tersoff_k800}
+\end{center}
+\end{figure}
+%
+\end{column}
+\hspace{-12mm}
+\begin{column}{0.5\textwidth}
+%
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{./Figures/SSP_tersoff_k200}
+\\
+\includegraphics[width=0.8\textwidth]{./Figures/SSP_tersoff_k800}
+\end{center}
+\end{figure}
+%
+
+\end{column}
+\end{columns}
 
 \end{frame}
+
+%___________________________NEW SLIDE______________________________________
+
+\begin{frame}{Global Sensitivity Analysis}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{./Figures/as_tersoff_k200}
+\end{center}
+\end{figure}
+
+\end{frame}
+
 
 \end{document}
