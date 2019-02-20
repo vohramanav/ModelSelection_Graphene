@@ -1,0 +1,30 @@
+Strategy:
+Consider AIREBO and Tersoff potentials
+
+Part 1: Motivate calibration of the two potentials based on their 
+comparison with experimental data in a range, 200K-800K. Further,
+motivate comparison of the two potentials in a Bayesian setting.
+
+Part 2:
+Build a reduced space surrogate for each potential using active subspaces
+1. Monitor convergence of the dominant eigenvector starting with 10 points
+and adding 5 points at each iteration.
+2. Once converged, determine the dimensionality of the dominant eigenspace
+based on the eigenvalue spectrum.
+3. For the considered dimensionality, explore the degree of the polynomial
+for the case of 1-D and 2-D surrogates using verification and validation errors.
+4. For higher dimensional surrogates, use PCE and estimte loo cross-validation
+error and validation error. 
+5. Finalize the RSS
+
+Part 3:
+Perform GSA using RSS for each potential to see if the sensitivities have
+changed significantly from 200 to 800.
+
+Part 4: 
+Perform a Bayesian calibration of the important parameters using data at
+200 and 800 K
+
+Part 5:
+Compute Bayes factors for each potential using data based on model 
+predictions at intermediate points.
